@@ -2,6 +2,7 @@
 
 ## Setup
 
+Create a virtual environment before installing the project packages.
 1. Create an environment with `python -m venv .venv`.
 2. Activate it with `.venv\Scripts\Activate.ps1` on PowerShell.
 3. Install packages with `pip install -r requirements.txt`.
