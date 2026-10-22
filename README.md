@@ -2,7 +2,7 @@
 
 ## Setup
 
-Setup steps will be documented on the analysis branch.
+Create a virtual environment before installing the project packages.
 
 ## Findings
 
