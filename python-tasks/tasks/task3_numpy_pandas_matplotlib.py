@@ -30,12 +30,12 @@ def numpy_examples():
     ])
     weights = np.array([0.30, 0.30, 0.40])
 
-    student_avg = marks.mean(axis=1)
-    subject_avg = marks.mean(axis=0)
-    with_grace = marks + 5                    # broadcasting: +5 to every mark
-    weighted = np.dot(with_grace, weights)
+    print("Shape:", marks.shape)
+    print("Student averages:", marks.mean(axis=1))
+    print("Subject averages:", marks.mean(axis=0))
 
-    return student_avg
+    with_grace = marks + 5                    # broadcasting: +5 to every mark
+    print("Weighted scores:", np.dot(with_grace, weights))
 
 
 def pandas_examples(df):
@@ -140,7 +140,7 @@ def create_charts(df, summary):
 
 
 def main():
-    print("Student averages:", numpy_examples())
+    numpy_examples()
 
     employees = pd.read_csv(DATA_DIR / "employees.csv")
     pandas_examples(employees)
